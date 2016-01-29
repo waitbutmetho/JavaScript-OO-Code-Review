@@ -16,3 +16,15 @@ Pizza.prototype.typeCharge = function() {
     return 0;
   }
 }
+
+Pizza.prototype.sizeCharge = function() {
+  if (this.size === 'Extra Large') {
+    return +10;
+  } else if (this.size === 'Large') {
+    return +8;
+  } else if (this.size === 'Medium') {
+    return +6;
+  } else {
+    return +4;
+  }
+}
