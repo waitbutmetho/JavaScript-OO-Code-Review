@@ -1,23 +1,24 @@
-# Movie Tickets
+# JavaScript-OO-Code-Review
 
-#### Select movie tickets to purchase, 01/26/2016
+####
 
-#### By Josh Gustafson and Michelle Brecunier
+#### By Josh Gustafson
 
 ## Description
 
-Add movie tickets to your cart by selecting a movie, showtime, and your age. The cart will show you the total cost of your tickets.
+Order pizza by selecting from drop down menus
 
 ## Setup/Installation Requirements
 
 * Clone this repository on github
+* Open index.html
 
 ## Known Bugs
 
-No known bugs
+If one selects None as a topping None will display as a topping
 
 ### License
 
 MIT License
 
-Copyright (c) 2016 **Josh Gustafson and Michelle Brecunier**
+Copyright (c) 2016 **Josh Gustafson**
