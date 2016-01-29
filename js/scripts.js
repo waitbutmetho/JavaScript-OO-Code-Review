@@ -54,3 +54,11 @@ Pizza.prototype.toppingTwoCharge = function() {
     return +1;
   }
 }
+
+Pizza.prototype.toppingThreeCharge = function() {
+  if (this.toppingThree === 'None') {
+    return 0;
+  } else {
+    return +1;
+  }
+}
