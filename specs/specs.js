@@ -33,4 +33,8 @@ describe('Pizza', function() {
     var testPizza = new Pizza('Deep Dish', 'Large', 'Fresh Mozzarella', 'Pepperoni', 'Bacon', 'Green Peppers');
     expect(testPizza.toppingThreeCharge()).to.equal(1);
   });
+  it("adds the getPrice method to all pizza's", function() {
+    var testPizza = new Pizza('Deep Dish', 'Large', 'Fresh Mozzarella', 'Pepperoni', 'Bacon', 'Green Peppers');
+    expect(testPizza.getPrice()).to.equal(14);
+  });
 });

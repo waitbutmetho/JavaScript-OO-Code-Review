@@ -10,7 +10,7 @@ this.toppingThree = toppingThree;
 Pizza.prototype.typeCharge = function() {
   if (this.type === 'Deep Dish') {
     return +2;
-  } else if (this.type === 'Regular') {
+  } else if (this.type === 'Classic') {
     return +1;
   } else {
     return 0;
