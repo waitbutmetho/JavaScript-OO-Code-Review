@@ -1,3 +1,4 @@
+// Business Logic
 function Pizza(type, size, cheese, toppingOne, toppingTwo, toppingThree) {
 this.type = type;
 this.size = size;
@@ -66,3 +67,39 @@ Pizza.prototype.toppingThreeCharge = function() {
 Pizza.prototype.getPrice = function() {
  return this.typeCharge() + this.sizeCharge() + this.cheeseCharge() + this.toppingOneCharge() + this.toppingTwoCharge() + this.toppingThreeCharge();
 }
+
+// User Interface Logic
+$(document).ready(function() {
+  var totalPrice = 0;
+
+  $('form#choosePizza').submit(function(event) {
+    event.preventDefault();
+
+    var pizzaType = $('select#pizzaType').val();
+    var pizzaSize = $('select#pizzaSize').val();
+    var pizzaCheese = $('select#pizzaCheese').val();
+    var pizzaToppingOne = $('select#toppingOne').val();
+    var pizzaToppingTwo = $('select#toppingTwo').val();
+    var pizzaToppingThree = $('select#toppingThree').val();
+    var newPizza = new Pizza(pizzaType, pizzaSize, pizzaCheese, pizzaToppingOne, pizzaToppingTwo, pizzaToppingThree);
+    var pizzaPrice = newPizza.getPrice();
+    var pizzaCart = [];
+
+    pizzaCart.push(newPizza);
+
+    pizzaCart.forEach(function(pizza) {
+      $('ul#pizzaInCart').append('<li>' + pizza.size + ', ' + pizza.type + ' $' + pizzaPrice + ' <br>Toppings: ' + pizza.cheese + ', ' + pizza.toppingOne + ', ' + pizza.toppingTwo + ', and ' + pizza.toppingThree + '</li>');
+      return totalPrice += pizzaPrice;
+    });
+    $("div#price").text("Total: $" + totalPrice);
+  });
+  $('button#buy').click(function() {
+    if(totalPrice) {
+      alert("We recieved your order. Thank You!");
+      location.reload();
+    } else {
+      alert("You have nothing in your cart to buy!");
+    }
+
+  });
+});
