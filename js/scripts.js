@@ -28,3 +28,13 @@ Pizza.prototype.sizeCharge = function() {
     return +4;
   }
 }
+
+Pizza.prototype.cheeseCharge = function() {
+  if (this.cheese === 'Smoked Fresh Monzzarella') {
+    return +2;
+  } else if (this.cheese === 'Fresh Monzzarella') {
+    return +1;
+  } else {
+    return 0;
+  }
+}
