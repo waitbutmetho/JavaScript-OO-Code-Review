@@ -30,9 +30,9 @@ Pizza.prototype.sizeCharge = function() {
 }
 
 Pizza.prototype.cheeseCharge = function() {
-  if (this.cheese === 'Smoked Fresh Monzzarella') {
+  if (this.cheese === 'Smoked Fresh Mozzarella') {
     return +2;
-  } else if (this.cheese === 'Fresh Monzzarella') {
+  } else if (this.cheese === 'Fresh Mozzarella') {
     return +1;
   } else {
     return 0;
