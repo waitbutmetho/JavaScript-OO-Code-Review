@@ -43,6 +43,14 @@ Pizza.prototype.toppingOneCharge = function() {
   if (this.toppingOne === 'None') {
     return 0;
   } else {
-    return 1;
+    return +1;
+  }
+}
+
+Pizza.prototype.toppingTwoCharge = function() {
+  if (this.toppingTwo === 'None') {
+    return 0;
+  } else {
+    return +1;
   }
 }
