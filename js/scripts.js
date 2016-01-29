@@ -38,3 +38,11 @@ Pizza.prototype.cheeseCharge = function() {
     return 0;
   }
 }
+
+Pizza.prototype.toppingOneCharge = function() {
+  if (this.toppingOne === 'None') {
+    return 0;
+  } else {
+    return 1;
+  }
+}
