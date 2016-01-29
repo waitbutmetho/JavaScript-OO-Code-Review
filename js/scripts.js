@@ -62,3 +62,7 @@ Pizza.prototype.toppingThreeCharge = function() {
     return +1;
   }
 }
+
+Pizza.prototype.getPrice = function() {
+ return this.typeCharge() + this.sizeCharge() + this.cheeseCharge() + this.toppingOneCharge() + this.toppingTwoCharge() + this.toppingThreeCharge();
+}

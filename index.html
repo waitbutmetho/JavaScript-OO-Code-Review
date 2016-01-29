@@ -2,18 +2,106 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Movie Ticket Site</title>
-  	<!-- jquery-2.2.0 -->
-  	<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
-  	<!-- bootstrap w/ optional theme -->
-  	<link rel="stylesheet" href="css/bootstrap.min.css">
-  	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-  	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-  	<!-- my css and js -->
-  	<link rel="stylesheet" href="css/styles.css">
-  	<script type="text/javascript" src="js/scripts.js"></script>
+    <title>Pizza Site</title>
+    <!-- jquery-2.2.0 -->
+    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <!-- bootstrap w/ optional theme -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- my css and js -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/scripts.js"></script>
   </head>
-   <body>
-    
-   </body>
- </html>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <form id="choosePizza">
+            <div class="form-group">
+              <label>Type of Pizza</label>
+              <select class="form-control" id="type">
+                <option>Thin Crust</option>
+                <option>Classic</option>
+                <option>Deep Dish</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Size</label>
+              <select class="form-control" id="size">
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+                <option>Extra Large</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Cheese</label>
+              <select class="form-control" id="cheese">
+                <option>Deli Mozzarella</option>
+                <option>Fresh Mozzarella</option>
+                <option>Smoked Fresh Mozzarella</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Topping One</label>
+              <select class="form-control" id="toppingOne">
+                <option>None</option>
+                <option>Pepperoni</option>
+                <option>Mushrooms</option>
+                <option>Onions</option>
+                <option>Sausage</option>
+                <option>Bacon</option>
+                <option>Extra cheese</option>
+                <option>Black olives</option>
+                <option>Green peppers</option>
+                <option>Pineapple</option>
+                <option>Spinach</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Topping Two</label>
+              <select class="form-control" id="toppingTwo">
+                <option>None</option>
+                <option>Pepperoni</option>
+                <option>Mushrooms</option>
+                <option>Onions</option>
+                <option>Sausage</option>
+                <option>Bacon</option>
+                <option>Extra cheese</option>
+                <option>Black olives</option>
+                <option>Green peppers</option>
+                <option>Pineapple</option>
+                <option>Spinach</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Topping Three</label>
+              <select class="form-control" id="toppingThree">
+                <option>None</option>
+                <option>Pepperoni</option>
+                <option>Mushrooms</option>
+                <option>Onions</option>
+                <option>Sausage</option>
+                <option>Bacon</option>
+                <option>Extra cheese</option>
+                <option>Black olives</option>
+                <option>Green peppers</option>
+                <option>Pineapple</option>
+                <option>Spinach</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" type="submit">Add to Cart</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h2>Pizza Cart:</h2>
+          <ul id="pizzaInCart">
+          </ul>
+          <div id="price">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
