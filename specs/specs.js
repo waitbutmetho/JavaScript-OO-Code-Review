@@ -21,4 +21,8 @@ describe('Pizza', function() {
     var testPizza = new Pizza('Deep Dish', 'Large', 'Fresh Mozzarella', 'Pepperoni', 'Bacon', 'Green Peppers');
     expect(testPizza.cheeseCharge()).to.equal(1);
   });
+  it("adds the toppingOneCharge method to all tickets", function() {
+    var testPizza = new Pizza('Deep Dish', 'Large', 'Fresh Mozzarella', 'Pepperoni', 'Bacon', 'Green Peppers');
+    expect(testPizza.toppingOneCharge()).to.equal(1);
+  });
 });
