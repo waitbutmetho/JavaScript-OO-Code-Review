@@ -17,4 +17,8 @@ describe('Pizza', function() {
     var testPizza = new Pizza('Deep Dish', 'Large', 'Fresh Monzzarella', 'Pepperoni', 'Bacon', 'Green Peppers');
     expect(testPizza.sizeCharge()).to.equal(8);
   });
+  it("adds the cheeseCharge method to all tickets", function() {
+    var testPizza = new Pizza('Deep Dish', 'Large', 'Fresh Monzzarella', 'Pepperoni', 'Bacon', 'Green Peppers');
+    expect(testPizza.cheeseCharge()).to.equal(1);
+  });
 });
