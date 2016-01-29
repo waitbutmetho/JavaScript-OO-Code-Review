@@ -1,0 +1,24 @@
+body {
+font-family: verdana, sans-serif, serif;
+color: #990000;
+background-image: url("../img/brickwall.png");
+}
+
+#jumbo {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.jumbotron {
+  background-image: url("../img/darkbrickwall.png");
+}
+
+.underline {
+  border-bottom: solid black;
+  border-radius: 10px;
+}
+
+.marginMaster {
+  margin-left: 5%;
+  margin-right: 5%;
+}
